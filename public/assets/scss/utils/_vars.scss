@@ -1,0 +1,65 @@
+// FOLDERS DESTINATION
+$filePath: "../fonts/";
+$imgPath: "../img/";
+
+// Primary color
+$primaryColor: #6F42C1;
+$primaryColorOutLine: #6e42c150;
+$primaryColorHover: #502d91;
+$secondaryColor: #000000b3;
+$secondaryColorHover: #000000e6;
+$bg: #E9ECEF;
+$textColor: #3f3f3f;
+$gray: #737373;
+$lightGray: #838383;
+$lightGrayTransparent: #83838377;
+$lightGrayOutLine: #8383838e;
+$black: #000;
+$white: #fff;
+$transparent: transparent;
+
+// alert color
+$alert: #fdffba;
+$success: #039b03;
+$warning: #f02e2e;
+$new: #e4ff6d;
+
+// Color caroussel 
+$filter: #00000054;
+$buttonActive: #fff;
+$buttonNonActive: #ffffff56;
+$buttonNonActiveHover: #6D6767;
+
+// Color manga release
+$bordercard: #0000001b;
+
+// Color contact us
+$articleCardPurple: #6F42C1;
+$articleCardblack: #1D142E;
+
+// Color footer
+$footerColor: #1D142E;
+$footerHoverButton: #d8d8d8;
+
+// Color my account
+$borderProfile: #00000020;
+$compteurProfile: #114B5F;
+$hoverButtonsProfile: #dcdcdc0e;
+
+// Color profil selecteur
+
+
+// BTN LINK COLORS
+$btnLink: $white;
+
+$headerHeight: 30vh; 
+
+// BORDER SHURTCUT COLORT
+$borderSolidPrimary: 2px solid $primaryColor;
+$borderDashedPrimary: 1px dashed $primaryColor;
+$borderSolidDark: 1px solid #80808033;
+
+// MARGIN AUTO
+$mxAuto: 0 auto;
+$myAuto: auto 0;
+$mAuto: auto;

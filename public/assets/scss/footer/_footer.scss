@@ -1,0 +1,27 @@
+footer{
+    width: 100%;
+    background-color: #000;
+    height: 209px;
+    @include flex(center, center, column);
+    gap: 28.57px;
+    margin-top: 50px;
+    div{
+        img{
+            width: 122px;
+        }
+    }
+    span{
+        font-size: 24px; 
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+}
+@media (max-width: 768px){
+    footer{
+        span{
+            width: 143px;
+            font-size: 12px;
+        }
+    }
+}

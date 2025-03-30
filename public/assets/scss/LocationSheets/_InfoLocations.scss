@@ -1,0 +1,173 @@
+.locationCollapse{
+    margin: 0 auto;
+    width: 1240px;
+    @include flex(space-between, flex-start);
+
+    .collapse{
+        justify-content: start;
+
+        .collapseHeader {
+            width: 582px;
+        }
+
+        .collapseContent{
+            width: 582px;
+        }
+    }
+    
+    .collapse:first-child{
+        align-items: flex-start;
+    }
+
+    .collapse:last-child{
+        align-items: flex-end;
+    }
+}
+
+.infoLocations {
+    width: 1240px;
+    @include flex(space-between, center);
+    margin: 30px auto;
+    .leftContent {
+            
+        h1 {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 36px;
+            color: #ff6060;
+        }
+        
+        h2 {
+            margin: 10px 0;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .infoTags{
+            margin-top: 20px;
+
+            button{
+                background-color: #ff6060;
+                color: #fff;
+                min-width: 115px;
+                height: 25px;
+                border-radius: 10px;
+                margin-right: 10px; 
+            }
+        }
+    }
+
+    .rightContent{
+        height: 100%;
+        @include flex(space-between, center, column);
+
+        .host {
+            @include flex (center, center);
+            width: 167px;
+            height: 64px;
+            gap: 10px;
+            margin-bottom: 21px;
+    
+    
+            span {
+                font-family: Montserrat;
+                font-size: 18px;
+                color: #ff6060;
+                text-align: right; 
+            }
+    
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .starRating {
+            display: flex;
+            gap: 5px;
+        
+            .fa-star {
+                font-size: 24px;
+            }
+        
+            .red {
+                color: #ff6060;
+            }
+        
+            .gray {
+                color: #e3e3e3;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+   .locationCollapse{
+    flex-direction: column;
+    width: 335px;
+    .collapse{
+
+        .collapseHeader, .collapseContent{
+            width: 335px;
+            border-radius: 5px;
+            p{
+                font-size: 14px;
+            }
+        }
+        .collapseHeader{
+            height: 30px;
+        }
+    }
+
+}
+.infoLocations{
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    .leftContent{
+        h1{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 14px;
+        }
+        .infoTags{
+            button{
+                width: 84px;
+                height: 18px;
+                border-radius: 5px;
+                font-size: 14px;
+                margin: 0 10px 10px 0;
+            }
+        }
+    }
+    .rightContent{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        .host{
+            width: 100%;
+            margin-bottom: 0;
+            justify-content: flex-end;
+            span{
+                font-size: 12px;
+            }
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .starRating{
+            .fa-star{
+                font-size: 13px;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,69 @@
+.Banner {
+    @include flex (center, center);
+    padding-bottom: 43px;
+    position: relative;
+    img {
+        width: 1240px;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+        z-index: 5;
+
+    }
+        .filter{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 10;
+            width: 1240px;
+            height: 223px;
+            border-radius: 25px;
+            background-color: #00000059;
+            transform: translateX(-50%);
+            @include flex(center, center);
+
+            h2 {
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 48px;
+                color: #fff;
+            }
+        }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .Banner {
+        padding-bottom: 22px;
+        img {
+            width: 335px;
+            height: 111px;
+            border-radius: 10px;
+        }
+        .filter{
+            width: 335px;
+            height: 111px;
+            border-radius: 10px;
+
+            h2 {
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+
+.error {
+    @include flex (center, center, column);
+    gap: 139px;
+    margin: 139px 0px;
+    img {
+        width: 597px;
+        height: 263px;
+    }
+    p {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 36px;
+        color: #ff6060;
+    }
+    a {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+        text-decoration-style: solid;
+    }
+}
+@media (max-width: 768px){
+
+    .error{
+        margin: 113px 0px;
+        gap: 113px;
+        
+        img{
+            width: 198px;
+            height: 100%;
+        }
+
+        p{
+            width: 260px;
+            font-size: 18px;
+            line-height: 143%;
+            text-align: center;
+            vertical-align: bottom;
+
+        }
+
+        a{
+            font-size: 14px;
+            vertical-align: bottom;
+        }
+    }
+}

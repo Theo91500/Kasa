@@ -1,0 +1,46 @@
+
+header{
+    margin: 0 auto;
+    nav{
+        @include flex(space-between, center);
+        padding: 45px 0px;
+        width: 1240px;
+        .LogoKasa{
+            img{
+                width: 210.32154846191406px;
+                height: 68px;        
+            }
+        }
+        ul{
+            @include flex(center, center);
+            gap: 57px;
+            .active {
+                border-bottom: solid 1px #000;
+            }
+            .LinkHeader {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    header{
+        nav{
+            width: 335px;
+            .LogoKasa{
+                img{
+                    width: 145px;
+                    height: 46.88059997558594px;
+                }
+            }
+            ul{
+                gap: 26px;
+                .LinkHeader {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
